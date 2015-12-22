@@ -3120,7 +3120,7 @@ OMX_ERRORTYPE  omx_vdec::get_parameter(OMX_IN OMX_HANDLETYPE     hComp,
                         DEBUG_PRINT_HIGH("get_parameter: CACHED buffers from IOMMU heap");
                         nativeBuffersUsage->nUsage = (GRALLOC_USAGE_PRIVATE_IOMMU_HEAP | GRALLOC_USAGE_PRIVATE_UNCACHED);
 #ifdef NO_IOMMU
-                        nativeBuffersUsage->nUsage |= (GRALLOC_USAGE_PRIVATE_MM_HEAP | GRALLOC_USAGE_PRIVATE_UNCACHED);
+                        nativeBuffersUsage->nUsage |= GRALLOC_USAGE_PRIVATE_MM_HEAP;
 #endif
                 }
 #else
