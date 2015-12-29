@@ -433,7 +433,6 @@ enum OMX_QCOM_EXTN_INDEXTYPE
     /* Enable VQZIP SEI NAL type */
     OMX_QTIIndexParamVQZIPSEIType = 0x7F000053,
 
-    OMX_QcomIndexParamPictureOrderCountType = 0x7F000054,
 };
 
 /**
@@ -1596,12 +1595,6 @@ typedef struct QOMX_VPP_HQVCONTROL {
 typedef struct QOMX_VPP_ENABLE {
     OMX_BOOL enable_vpp;
 } QOMX_VPP_ENABLE;
-
-typedef struct QOMX_PICTURE_ORDER_COUNT_TYPE {
-    OMX_U32 nSize;
-    OMX_VERSIONTYPE nVersion;
-    OMX_U32 nType;
-} QOMX_PICTURE_ORDER_COUNT_TYPE;
 
 #ifdef __cplusplus
 }
